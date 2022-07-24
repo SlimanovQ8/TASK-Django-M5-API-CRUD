@@ -27,7 +27,7 @@ class BookingObjAPIUpdateView(UpdateAPIView):
     queryset = Booking.objects.all()
     serializer_class = UpdateSerializer
     lookup_field = 'id'
-    lookup_url_kwarg = 'Booking_id'
+    lookup_url_kwarg = 'booking_id'
 
 
 class BookingDeleteAPIView(DestroyAPIView):
